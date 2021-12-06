@@ -6,10 +6,11 @@ stage('CheckoutCode'){
     git branch: 'development', credentialsId: 'b5237f90-0f4c-45e8-8ad4-fe5521db42f0', url: 'https://github.com/Adwaithatruly/maven-web-application.git'
 }
 
-/*
+
 stage("Build"){
     sh "${mavenHome}/bin/mvn clean package"
 }
+/*
 stage('ExecuteSonarCubeReport'){
     sh "${mavenHome}/bin/mvn sonar:sonar"
 }
